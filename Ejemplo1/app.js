@@ -1,6 +1,3 @@
-//Esta linea crea una variable la cual se encarga de obtener por medio del Objeto document el elemento button con el id "btnCalcular"
-let btnCalcular = document.getElementById('btnCalcular');
-
 //Por medio del método "addEventListener" se le asigno el elemento clic al elemento button y al momento de ejecutar dicho evento se ejecutara la funcion suma
 btnCalcular.addEventListener('click', suma);
 
