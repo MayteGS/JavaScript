@@ -11,13 +11,11 @@ function obtenerCalificacion() {
     let resIncorrectas = Number(document.getElementById('resIncorrectas').value);
     let resEnBlanco = Number(document.getElementById('resEnBlanco').value);
 
-    // const resCorrectas = 4;
-    // const resIncorrectas = -1;
-    // const resEnBlanco = 0;
-
     let resultadoCalificacion = 0;
 
-    resultadoCalificacion = ((resCorrectas + resIncorrectas) + resEnBlanco);
+    resultadoCalificacion = (resCorrectas + 4) + (resIncorrectas - 1);
+
+    console.log(resultadoCalificacion);
 
     let imprimirResultado = document.getElementById('resultado');
 
