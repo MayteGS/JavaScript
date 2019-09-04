@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Area Triangulos</title>
+    <title>Conagua</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,13 +14,13 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h1>Area Cualquier Triangulo</h1>
+            <h1>Pago Conagua</h1>
 
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="">Lado A</label>
-                        <input id="ladoA" class="form-control" type="text">
+                        <label for="">Largo</label>
+                        <input id="metros" class="form-control" type="text" name="">
                     </div>
                 </div>
             </div>
@@ -28,8 +28,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="">Lado B</label>
-                        <input id="ladoB" class="form-control" type="text">
+                        <label for="">Ancho</label>
+                        <input id="ancho" class="form-control" type="text" name="">
                     </div>
                 </div>
             </div>
@@ -37,22 +37,31 @@
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="">Lado C</label>
-                        <input id="ladoC" class="form-control" type="text">
+                        <label for="">Base</label>
+                        <input id="base" class="form-control" type="text" name="">
                     </div>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-12">
-                    <button type="button" name="" id="btnCalcular" class="btn btn-primary btn-lg btn-block">Calcular</button>
+                    <div class="form-group">
+                        <label for="">Costo por litro</label>
+                        <input id="costo" class="form-control" type="text" name="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" name="" id="btnCalcular" class="btn btn-primary btn-lg btn-block">Calcular Pago</button>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-12">
                     <div class="alert alert-success" role="alert">
-                        <h4 class="alert-heading">El area es:
+                        <h4 class="alert-heading">El monto a pagar es:
                             <span id="resultado"></span>
                         </h4>
                     </div>
@@ -61,22 +70,6 @@
 
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Optional JavaScript -->
     <script src="./app.js"></script>

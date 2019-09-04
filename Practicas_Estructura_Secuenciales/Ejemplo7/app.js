@@ -13,9 +13,7 @@ function obtenerCalificacion() {
 
     let resultadoCalificacion = 0;
 
-    resultadoCalificacion = (resCorrectas + 4) + (resIncorrectas - 1);
-
-    console.log(resultadoCalificacion);
+    resultadoCalificacion = (resCorrectas * 4) + (resIncorrectas * (-1)) + (resEnBlanco * 0);
 
     let imprimirResultado = document.getElementById('resultado');
 

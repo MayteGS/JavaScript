@@ -3,19 +3,22 @@ let btnCalcular = document.getElementById('btnCalcular');
 EventListener();
 
 function EventListener() {
-
-    btnCalcular.addEventListener('click', presupuesto);
+    btnCalcular.addEventListener('click', areaTriangulos);
 }
 
-function presupuesto() {
-    let metros = Number(document.getElementById('metros').value);
-    let ancho = Number(document.getElementById('ancho').value);
-    let base = Number(document.getElementById('base').value);
-    let costo = Number(document.getElementById('costo').value);
-    let calculo = 0;
-    calculo = metros * ancho * base;
-    calculo *= 1000;
-    calculo *= costo;
-    let imprime = document.getElementById('Resultado');
-    imprime.innerHTML = calculo;
+function areaTriangulos() {
+    let ladoA = Number(document.getElementById('ladoA').value);
+    let ladoB = Number(document.getElementById('ladoB').value);
+    let ladoC = Number(document.getElementById('ladoC').value);
+
+    let semiperimetro = 0;
+    semiperimetro = ladoA + ladoB + ladoC
+    semiperimetro /= 2;
+
+    let area = 0;
+    semiperimetro = semiperimetro * (semiperimetro - ladoA) * (semiperimetro - ladoB) * (semiperimetro - ladoC);
+    area = Math.sqrt(semiperimetro);
+
+    let imprimirResultado = document.getElementById('resultado');
+    imprimirResultado.innerHTML = area;
 }
