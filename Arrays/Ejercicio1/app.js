@@ -1,6 +1,5 @@
 let btnCalcular = document.getElementById('btnCalcular');
-let tipoOperacion = document.getElementById('tipoOperacion');
-let contador = 0;
+
 
 EventListener();
 
@@ -9,5 +8,8 @@ function EventListener() {
 }
 
 function calcularArray() {
+    let operaciones = document.getElementById('operaciones');
+    if (operaciones == 'A') {
 
+    }
 }
